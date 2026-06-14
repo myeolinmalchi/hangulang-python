@@ -276,9 +276,6 @@ cargo test
 현재 Python 테스트는 `vendor/hangulang/tests/fixtures`의 Rust `hangulang` fixture
 corpus를 재사용합니다.
 
-Phase별 구현 계획은 [`docs/implementation-plan.md`](docs/implementation-plan.md)에
-정리되어 있습니다.
-
 ---
 
 ## 로드맵
