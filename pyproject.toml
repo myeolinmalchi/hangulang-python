@@ -51,7 +51,7 @@ Issues = "https://github.com/myeolinmalchi/hangulang-python/issues"
 [tool.maturin]
 python-source = "python"
 module-name = "hangulang._native"
-features = ["pyo3/extension-module"]
+features = ["pyo3/extension-module", "pyo3/abi3-py310"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

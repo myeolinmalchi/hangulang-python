@@ -37,7 +37,7 @@ jobs:
           path: dist/*
 
   wheels:
-    name: Build wheel ${{ matrix.os }} Python ${{ matrix.python-version }}
+    name: Build wheel ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -47,48 +47,12 @@ jobs:
             python-version: "3.10"
             target: x86_64
             args: --release --out dist -i python3.10 --compatibility pypi
-          - os: ubuntu-latest
-            python-version: "3.11"
-            target: x86_64
-            args: --release --out dist -i python3.11 --compatibility pypi
-          - os: ubuntu-latest
-            python-version: "3.12"
-            target: x86_64
-            args: --release --out dist -i python3.12 --compatibility pypi
-          - os: ubuntu-latest
-            python-version: "3.13"
-            target: x86_64
-            args: --release --out dist -i python3.13 --compatibility pypi
           - os: macos-14
             python-version: "3.10"
             target: aarch64-apple-darwin
             args: --release --out dist --interpreter python --compatibility pypi
-          - os: macos-14
-            python-version: "3.11"
-            target: aarch64-apple-darwin
-            args: --release --out dist --interpreter python --compatibility pypi
-          - os: macos-14
-            python-version: "3.12"
-            target: aarch64-apple-darwin
-            args: --release --out dist --interpreter python --compatibility pypi
-          - os: macos-14
-            python-version: "3.13"
-            target: aarch64-apple-darwin
-            args: --release --out dist --interpreter python --compatibility pypi
           - os: windows-latest
             python-version: "3.10"
-            target: x86_64-pc-windows-msvc
-            args: --release --out dist --interpreter python --compatibility pypi
-          - os: windows-latest
-            python-version: "3.11"
-            target: x86_64-pc-windows-msvc
-            args: --release --out dist --interpreter python --compatibility pypi
-          - os: windows-latest
-            python-version: "3.12"
-            target: x86_64-pc-windows-msvc
-            args: --release --out dist --interpreter python --compatibility pypi
-          - os: windows-latest
-            python-version: "3.13"
             target: x86_64-pc-windows-msvc
             args: --release --out dist --interpreter python --compatibility pypi
 
@@ -117,7 +81,7 @@ jobs:
       - name: Upload wheel
         uses: actions/upload-artifact@v4
         with:
-          name: wheels-${{ matrix.os }}-${{ matrix.python-version }}
+          name: wheels-${{ matrix.os }}
           path: dist/*
 
   publish:
