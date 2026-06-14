@@ -4,6 +4,9 @@ version = "0.1.0-alpha.0"
 edition = "2021"
 license = "MIT"
 description = "PyO3 bindings for the hangulang document conversion engine"
+repository = "https://github.com/myeolinmalchi/hangulang-python"
+homepage = "https://github.com/myeolinmalchi/hangulang-python"
+readme = "README.md"
 
 [lib]
 name = "_native"

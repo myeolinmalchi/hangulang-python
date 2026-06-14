@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
-  { name = "hangulang-python contributors" },
+  { name = "myeolinmalchi" },
 ]
 keywords = ["hwp", "hwpx", "hangul", "doclang", "document-conversion"]
 classifiers = [
@@ -43,9 +43,10 @@ dev = [
 hangulang = "hangulang._cli:main"
 
 [project.urls]
-Homepage = "https://github.com/hangulang/hangulang-python"
-Repository = "https://github.com/hangulang/hangulang-python"
-Changelog = "https://github.com/hangulang/hangulang-python/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/myeolinmalchi/hangulang-python"
+Repository = "https://github.com/myeolinmalchi/hangulang-python"
+Changelog = "https://github.com/myeolinmalchi/hangulang-python/blob/main/CHANGELOG.md"
+Issues = "https://github.com/myeolinmalchi/hangulang-python/issues"
 
 [tool.maturin]
 python-source = "python"
