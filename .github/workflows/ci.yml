@@ -42,5 +42,4 @@ jobs:
         run: cargo test
 
       - name: Build wheel smoke test
-        run: python -m maturin build --interpreter python
-
+        run: python -m maturin build --interpreter python --compatibility pypi
