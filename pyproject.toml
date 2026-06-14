@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "hangulang"
-version = "0.1.0a0"
+version = "0.1.0"
 description = "Python bindings and integrations for the Rust hangulang document conversion engine"
 readme = "README.md"
 requires-python = ">=3.10"

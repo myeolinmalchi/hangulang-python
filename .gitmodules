@@ -1,3 +1,4 @@
 [submodule "vendor/hangulang"]
 	path = vendor/hangulang
 	url = https://github.com/myeolinmalchi/hangulang.git
+	branch = main
